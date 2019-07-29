@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:padding="@dimen/_20sdp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/winOrTie"
+        android:fontFamily="@font/myfont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/winner"
+        android:textColor="@color/red"
+        android:layout_margin="@dimen/_10sdp"
+        android:textSize="@dimen/_45sdp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/star1"
+            android:visibility="gone"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/stars"/>
+        <ImageView
+            android:id="@+id/star2"
+            android:visibility="gone"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/stars"/>
+
+        <ImageView
+            android:id="@+id/star3"
+            android:visibility="gone"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/stars"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/pImage"
+        android:src="@drawable/tied"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp" />
+
+    <TextView
+        android:id="@+id/playerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/player"
+        android:textColor="@color/green"
+        android:fontFamily="@font/myfont"
+        android:textSize="@dimen/_30sdp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/restartButton"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"
+        android:textAllCaps="false"
+        android:background="@drawable/restart_background"
+        android:fontFamily="@font/myfont"
+        android:text="@string/restart"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
